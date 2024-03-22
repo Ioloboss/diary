@@ -1,0 +1,19 @@
+[package]
+name = "diary"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "diaryd"
+
+[[bin]]
+name = "diary"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.35"
+event-listener = "5.2.0"
+notify = "6.1.1"
+tokio = { version = "1.36.0", features = ["full"] }
+zbus = "4.1.2"
